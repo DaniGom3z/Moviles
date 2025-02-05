@@ -34,7 +34,6 @@ fun AppNavHost(
         }
 
         composable("menu") {
-            // Pantalla de menú para el stock
             MenuScreen(
                 navController = navController,
                 productViewModel = menuViewModel

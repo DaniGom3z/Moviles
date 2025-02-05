@@ -31,7 +31,7 @@ class AuthViewModel(private val authRepository: AuthRepository) : ViewModel() {
             try {
                 val response = authRepository.login(LoginRequest(email, password))
 
-           7     if (response.isSuccessful) {
+                if (response.isSuccessful) {
                     val body = response.body()
                     if (body != null) {
                         _authState.value = AuthState.Success
